@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+       <meta charset="UTF-8">
+       <title >Contactos- Barberia Alura</title>
+       <link rel="stylesheet" href="reset.css">
+       <link rel="stylesheet" href="style.css">
+
+    </head>
+    
+    <body>
+            <header> 
+                <div class="caja" >
+                     <h1><img src="imagenes/logo.png"alt="Logo de la Barberia Alura"></h1>
+
+                     <nav>
+                         <ul>
+                             <li><a href="index.html">Home</a> </li>
+                            <li><a href="productos.html.html">Productos</a></li>
+                            <li><a href="contacto.html">Contactos</a></li>
+                        </ul>
+                    </nav>
+                 </div>
+            </header>
+            <main>
+                <form>
+                    <label for="nombreYapellido">Nombre y Apellido *</label>
+                    <input type="text" id="nombreYapellido" class="input-padron" required placeholder="Pepito Perez">
+
+                    <label for="correo">Correo Eletronico *</label>
+                    <input type="email" id="correo" class="input-padron" required placeholder="imail@dominio.com">
+
+                    <label for="telefono">Telefono *</label>
+                    <input type="tel" id="telefono" class="input-padron" required placeholder="(xx) xxxx xxxx">
+                    
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mesaje" cols="72" rows="10" required></textarea>
+                    
+                    <fieldset>
+                        <legend>¿Como le gustaria que lo contactaramos?</legend>
+                    
+                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                        
+
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"id="radio-telefono">Telefono</label>
+                        
+
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp"id="radio-whatsapp" checked>WhatsApp</label>
+                        
+                    </fieldset>
+
+                    <p>¿En que horario prefiere ser atendido?</p>
+                    
+                    <div>
+                        <select >
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                            <option>Noche</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la Barberia Alura?</label>
+                    
+                    <input type="submit" value="Enviar formulario" class="enviar">
+        
+                </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dias</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+
+                    
+
+                    <tbody>
+                        <p class="horarioAtencion">Horario de atencion</p>
+                         <tr>
+                            <td>Lunes</td>
+                            <td>08:00am - 02:00pm</td>
+                        </tr>
+
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>08:00am - 02:00pm</td>
+                        </tr>
+
+                        <tr>
+                            <td>Viernes</td>
+                            <td>08:00am - 02:00pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+            <footer>
+                <h1><img src="imagenes/logo-blanco.png" alt="Logo de la Barberia Alura"></h1>
+                <p class="copyright">&copy copyright Barberia Alura - 2023</p>
+            </footer>
+    <body>
+</html>
